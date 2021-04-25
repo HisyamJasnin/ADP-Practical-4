@@ -2,7 +2,8 @@
 <?import javafx.scene.control.*?>
 <?import java.net.URL?>
 
-<VBox>
+<VBox xmlns:fx="https://javafx.com/fxml1"
+fx:controller="todolist.controller.LoginController">
 	<stylesheets>
 	<URL value="@App.css" />
 	</stylesheets>
@@ -11,19 +12,19 @@
 	
 	<HBox>
 		<Label text="Username" />
-	<TextField />
+	<TextField fx:id="usernameTextField" />
 	</HBox>
 	
 	<HBox >
 		<Label text="Password" />
-		<PasswordField />
+		<PasswordField fx:id="passwordTextField"/>
 	</HBox>
 	
-	<CheckBox text="Show Password"/>
+	<CheckBox text="Show Password" fx:id="showPasswordCheckBox"/>
 	
 	<HBox>
-	<Button text="Login" />
-	<Button text="Register" />
+	<Button text="Login" onAction="#login" />
+	<Button text="Register" onAction="#register"/>
 	</HBox>
-	<Label styleClass="title" />
+	<Label styleClass="title, warning" fx:id="errorLabel"/>
 </VBox>

@@ -5,5 +5,8 @@ module ADPpractical4 {
 	 requires transitive javafx.graphics;
 
 	 opens todolist to javafx.fxml;
+	 opens todolist.controller to javafx.fxml;
 	 exports todolist;
+	 exports todolist.model;
+	 exports todolist.controller;
 }
