@@ -8,8 +8,12 @@ import javafx.stage.Stage;
 
 public class TodoListApp extends Application {
 	
+	public static Stage mainStage;
+	
+	@Override
 	public void start(Stage arg0) throws Exception{
-		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view/Login.fxml"));
+//		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view/Login.fxml"));
+		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view/Todo.fxml"));
 		Parent root = fxmlLoader.load();
 				
 		Scene scene = new Scene(root, 500, 500);

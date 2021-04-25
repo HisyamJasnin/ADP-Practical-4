@@ -1,0 +1,24 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<VBox xmlns:fx="https://javafx.com/fxml/1"
+fx:controller="todolist.controller.TodoController">
+
+	<stylesheets>
+	<URL value="@App.css" />
+	</stylesheets>
+	
+	<HBox alignment="center">
+	<TextField styleClass="todo" fx:id="todoTextField" />
+	<Button styleClass="todoButton" text="+" onAction="#add"/>
+	</HBox>
+	
+	<Label styleClass="title, warning" fx:id="errorLabel" />
+	<Label styleClass="title" text="To Do List" />
+	
+	<ScrollPane>
+	<VBox fx:id="todolistVBox" >
+	</VBox>
+	</ScrollPane>
+</VBox>
