@@ -1,0 +1,29 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<VBox>
+	<stylesheets>
+	<URL value="@App.css" />
+	</stylesheets>
+	
+	<Label text="Welcome to ToDoList App" styleClass="title"/>
+	
+	<HBox>
+		<Label text="Username" />
+	<TextField />
+	</HBox>
+	
+	<HBox >
+		<Label text="Password" />
+		<PasswordField />
+	</HBox>
+	
+	<CheckBox text="Show Password"/>
+	
+	<HBox>
+	<Button text="Login" />
+	<Button text="Register" />
+	</HBox>
+	<Label styleClass="title" />
+</VBox>
